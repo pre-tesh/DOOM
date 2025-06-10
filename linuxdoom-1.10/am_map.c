@@ -1239,7 +1239,7 @@ AM_drawLineCharacter
 
 void AM_drawPlayers(void)
 {
-    int		i;
+    int		i;doom
     player_t*	p;
     static int 	their_colors[] = { GREENS, GRAYS, BROWNS, REDS };
     int		their_color = -1;
@@ -1281,14 +1281,10 @@ void AM_drawPlayers(void)
 
 }
 
-void
-AM_drawThings
-( int	colors,
-  int 	colorrange)
+void AM_drawThings( int	colors , int colorrange)
 {
     int		i;
     mobj_t*	t;
-
     for (i=0;i<numsectors;i++)
     {
 	t = sectors[i].thinglist;
